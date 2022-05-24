@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Daenerys Targaryen</title>
+    <link rel="stylesheet" href="../styles.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../assets/dragon.ico" />
+  </head>
+  <body data-bg="../assets/img/map.jpg">
+    <nav class="header">
+      <div id="logoContainer">
+        <a href="../index.html" tabindex="-1"></a>
+      </div>
+      <span class="titleName">DAENERYS TARGARYEN</span>
+      <div id="responsive">
+        <button class="hamburguer" onclick="openSidenav()"></button>
+        <div class="sidenav">
+          <div class="closeContainer">
+            <button class="close" onclick="openSidenav()"></button>
+          </div>
+          <ul>
+            <li><a href="../presentation.html">Presentación</a></li>
+            <li>
+              <a href="../category.html" class="navSelected">Libros</a>
+            </li>
+            <li><a href="../links.html">Enlaces</a></li>
+          </ul>
+        </div>
+        <div class="overlay"></div>
+      </div>
+      <div id="non-responsive">
+        <ul>
+          <li><a href="../presentation.html">Presentación</a></li>
+          <li><a href="../category.html" class="navSelected">Libros</a></li>
+          <li><a href="../links.html">Enlaces</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="detailsContainer">
+      <main id="details">
+        <article>
+          <div class="routingBooks">
+            <div class="prevBook">
+              <a href="./details-libro3.html"
+                ><span>&#8592;</span>Anterior: Tormenta de Espadas</a
+              >
+            </div>
+          </div>
+          <h2>Danza de Dragones</h2>
+          <p>
+            Mientras sigue en Meereen, Daenerys se entera de que Yunkai le ha
+            declarado la guerra. Cierto día recibe a un emisario de la ciudad de
+            Qarth que resulta ser Xaro Xhoan Daxos. Xaro le ofrece sus barcos
+            para marchar a Poniente, pero ella se niega, a lo que Xaro afirma
+            que entonces Qarth le declara la guerra y que se ha aliado con
+            Yunkai y las ciudades de Tolos y Nuevo Ghis. Pero la situación en
+            Meereen también es preocupante, pues los Inmaculados y libertos de
+            Daenerys son atacados continuamente por los llamados Hijos de la
+            Arpía, los miembros de la nobleza de Meereen que se oponen al
+            gobierno de Daenerys. Para calmar los ánimos, Daenerys decide
+            casarse con Hizdahr zo Loraq, uno de los más poderosos nobles de la
+            ciudad. A su vez, Daenerys rechaza la oferta de matrimonio del
+            príncipe Quentyn Martell, que le ofrece el apoyo de Dorne para
+            conquistar el Trono de Hierro si acepta.
+          </p>
+          <p>
+            Durante la celebración de un torneo en las arenas de lucha, Drogon
+            aparece en mitad de la arena y acaba con los hombres enviados por
+            Hizdahr zo Loraq para matarlo. Daenerys baja a la arena a calmar a
+            su retoño y monta en su lomo, entonces Drogon se la lleva volando al
+            Mar Dothraki, dejando Meereen en manos de Hizdahr.
+          </p>
+          <p>
+            Ser Barristan permanece como representante en ausencia de Daenerys y
+            es el único que se opone a los deseos de Hizdahr zo Loraq de
+            capturar a los dragones y entregar la ciudad a los nobles
+            esclavistas. Ayudado por Missandei y Shakaz mo Kandaq, Ser Barristan
+            lucha contra los hombres de Hizdahr y sospecha que este es el líder
+            de los Hijos de la Arpía.
+          </p>
+          <p>
+            Mientras tanto, Daenerys sigue el curso del río Skahazadhan
+            pretendiendo llegar a la Bahía de los Esclavos, pero termina cayendo
+            exhausta después de apenas consumir alimentos e ingerir agua no
+            potable. Cuando todo parecía perdido para ella, el khalasar de Khal
+            Jhaqo la encuentra.
+          </p>
+        </article>
+      </main>
+      <aside id="about">
+        <figure>
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="../assets/img/5_danza_de_dragones-portrait.jpeg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="../assets/img/5_danza_de_dragones.jpeg"
+            />
+            <img
+              src="../assets/img/5_danza_de_dragones.jpeg"
+              alt="Portada de Danza de Dragones"
+              title="Portada de Danza de Dragones"
+              class="lazy"
+              data-src="../assets/img/5_danza_de_dragones.jpeg"
+            />
+          </picture>
+          <figcaption>
+            <cite>Foto de la portada de Danza de Dragones</cite> por Aida María
+            González Fernández.
+          </figcaption>
+        </figure>
+        <h3>Capítulos del libro desde el punto de vista de Daenerys</h3>
+        <ul class="chapters"></ul>
+      </aside>
+    </div>
+    <footer>
+      <div class="linksContainer">
+        <ul>
+          <li>
+            <a href="../presentation.html">Presentación</a>
+          </li>
+          <li>·</li>
+          <li><a href="../category.html">Libros</a></li>
+          <li>·</li>
+          <li><a href="../links.html">Enlaces</a></li>
+        </ul>
+      </div>
+      <div class="bottomFooter">
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="530.000000pt"
+            height="458.000000pt"
+            viewBox="0 0 530.000000 458.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(0.000000,458.000000) scale(0.100000,-0.100000)"
+              stroke="none"
+            >
+              <path
+                d="M961 4575 c-1 -6 11 -28 25 -49 36 -53 602 -806 625 -832 24 -25 24
+         -40 2 -49 -20 -7 -172 -56 -268 -85 -33 -10 -229 -71 -435 -135 -206 -64 -403
+         -125 -437 -135 -69 -20 -83 -27 -83 -40 0 -4 89 -53 198 -109 633 -321 579
+         -287 723 -451 41 -47 97 -110 125 -140 29 -30 65 -71 80 -90 16 -19 31 -37 34
+         -40 3 -3 39 -43 80 -90 41 -47 77 -87 80 -90 3 -3 34 -39 70 -80 36 -41 79
+         -91 97 -110 17 -19 41 -47 53 -63 l21 -27 471 0 470 0 517 -389 c284 -213 642
+         -483 795 -599 154 -116 283 -209 287 -207 3 3 12 84 18 182 7 98 16 231 22
+         296 5 65 6 124 2 131 -5 7 -131 122 -281 255 -150 133 -277 252 -283 264 -5
+         12 -55 148 -112 302 l-102 279 -375 349 c-443 411 -546 502 -694 612 -215 159
+         -826 568 -1366 912 -107 69 -225 145 -262 169 -37 24 -72 44 -77 44 -5 0 -12
+         6 -14 13 -3 6 -6 7 -6 2z m1743 -1577 c108 -104 292 -274 443 -412 23 -21 40
+         -43 37 -47 -3 -5 -39 -9 -79 -9 -78 0 -71 -2 -212 76 -27 15 -80 44 -120 65
+         -146 78 -138 72 -137 115 1 21 6 68 12 104 19 121 27 136 56 108z"
+              />
+              <path
+                d="M989 2706 c-2 -3 -40 -9 -84 -15 -168 -22 -728 -104 -832 -122 -35
+         -6 -63 -15 -63 -19 0 -4 116 -85 257 -180 616 -415 1037 -699 1153 -779 81
+         -55 214 -165 375 -311 138 -124 352 -315 475 -425 123 -110 249 -224 280 -252
+         31 -29 69 -62 83 -73 l26 -21 238 80 c131 43 337 111 458 151 121 40 227 76
+         235 82 21 13 -114 5 -538 -33 l-132 -12 -93 72 c-186 143 -743 579 -918 717
+         -115 91 -120 97 -289 331 -95 131 -190 261 -210 288 -66 90 -223 309 -300 418
+         -54 77 -81 107 -96 107 -11 0 -23 -2 -25 -4z"
+              />
+              <path
+                d="M3355 1264 c11 -17 54 -74 95 -128 351 -458 382 -501 421 -585 21
+         -47 49 -106 62 -131 l22 -45 65 2 c58 1 265 10 650 29 l125 6 115 -97 c122
+         -102 170 -144 287 -243 40 -34 74 -62 77 -62 15 0 2 37 -55 156 -33 71 -77
+         165 -97 208 -20 44 -53 112 -72 150 l-35 71 -125 11 c-69 6 -215 17 -325 23
+         -110 7 -248 17 -307 21 l-107 9 -138 109 c-733 575 -687 541 -658 496z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="subjectContainer">
+          <p>Asignatura de Herramientas de HTML y CSS.</p>
+          <p>Aida María González Fernández</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../app.js"></script>
+    <script src="../../node_modules/vanilla-lazyload/dist/lazyload.min.js"></script>
+  </body>
+</html>

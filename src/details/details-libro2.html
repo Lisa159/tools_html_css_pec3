@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Daenerys Targaryen</title>
+    <link rel="stylesheet" href="../styles.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../assets/dragon.ico" />
+  </head>
+  <body data-bg="../assets/img/map.jpg">
+    <nav class="header">
+      <div id="logoContainer">
+        <a href="../index.html" tabindex="-1"></a>
+      </div>
+      <span class="titleName">DAENERYS TARGARYEN</span>
+      <div id="responsive">
+        <button class="hamburguer" onclick="openSidenav()"></button>
+        <div class="sidenav">
+          <div class="closeContainer">
+            <button class="close" onclick="openSidenav()"></button>
+          </div>
+          <ul>
+            <li><a href="../presentation.html">Presentación</a></li>
+            <li>
+              <a href="../category.html" class="navSelected">Libros</a>
+            </li>
+            <li><a href="../links.html">Enlaces</a></li>
+          </ul>
+        </div>
+        <div class="overlay"></div>
+      </div>
+      <div id="non-responsive">
+        <ul>
+          <li><a href="../presentation.html">Presentación</a></li>
+          <li><a href="../category.html" class="navSelected">Libros</a></li>
+          <li><a href="../links.html">Enlaces</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="detailsContainer">
+      <main id="details">
+        <article>
+          <div class="routingBooks">
+            <div class="prevBook">
+              <a href="./details-libro1.html"
+                ><span>&#8592;</span>Anterior: Juego de Tronos</a
+              >
+            </div>
+            <div class="nextBook">
+              <a href="./details-libro3.html"
+                >Siguiente: Tormenta de Espadas<span>&#8594;</span></a
+              >
+            </div>
+          </div>
+          <h2>Choque de Reyes</h2>
+          <p>
+            El reducido khalasar de Daenerys vaga por el Desierto Rojo,
+            hallándose casi todos al borde de la extenuación. Daenerys envía
+            emisarios en todas direcciones y consigue recibir a tres emisarios
+            enviados por la ciudad de Qarth. Daenerys pide que la dejen entrar
+            en la ciudad, pero los embajadores enviados por Qarth se niegan.
+            Daenerys finalmente logra entrar bajo la protección del rico
+            mercader Xaro Xhoan Daxos y pide ayuda a los ricos mercaderes para
+            que la ayuden a conquistar Poniente, pero todos le realizan promesas
+            vanas, igual que le habían hecho a su difunto hermano mayor años
+            atrás, y solo están interesados en sus dragones. Daenerys tiene
+            también que lidiar con las insinuaciones de Xaro Xhoan Daxos que le
+            sugiere en reiteradas ocasiones que se case con él para que así
+            dispusiera de su fortuna con la que invadir Poniente, pero ella le
+            rechaza.
+          </p>
+          <p>
+            En contra del consejo de sus consejeros, Daenerys se entrevista con
+            los misteriosos brujos de Qarth en la llamada Casa de los Eternos.
+            Allí, Daenerys tiene extrañas visiones en las que están el salón del
+            Trono de Hierro de la Fortaleza Roja, o su difunto hermano Rhaegar
+            hablando con su esposa Elia Martell. Pronto Daenerys se da cuenta de
+            que los brujos, liderados por Pyat Pree, conspiraban para encerrarla
+            en la Casa de los Eternos y apoderarse de sus dragones, pero ella
+            logra escapar gracias a la ayuda de sus pequeños dragones,
+            destruyendo el templo. Daenerys, tomando el consejo de una extraña
+            mujer llamada Quaithe, decide marcharse de Qarth rumbo al este.
+          </p>
+          <p>
+            En los puertos de la ciudad, Daenerys está a punto de ser asesinada
+            por una mantícora, siendo salvada en última instancia por dos
+            sujetos, uno se hace llamar Belwas el Fuerte, mientras que el otro
+            afirma ser su escudero, un anciano llamado Arstan Barbablanca. Ambos
+            se presentan como hombres del magíster Illyrio, el cual los ha
+            enviado junto a tres barcos con los que llevarla de vuelta a Pentos,
+            pero ella toma los barcos y decide marcharse a Astapor, hacia la
+            Bahía de los Esclavos.
+          </p>
+        </article>
+      </main>
+      <aside id="about">
+        <figure>
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="../assets/img/2_choque_de_reyes-portrait.jpeg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="../assets/img/2_choque_de_reyes.jpeg"
+            />
+            <img
+              src="../assets/img/2_choque_de_reyes.jpeg"
+              alt="Portada de Choque de Reyes"
+              title="Portada de Choque de Reyes"
+              class="lazy"
+              data-src="../assets/img/2_choque_de_reyes.jpeg"
+            />
+          </picture>
+          <figcaption>
+            <cite>Foto de la portada de Choque de Reyes</cite> por Aida María
+            González Fernández.
+          </figcaption>
+        </figure>
+        <h3>Capítulos del libro desde el punto de vista de Daenerys</h3>
+        <ul class="chapters"></ul>
+      </aside>
+    </div>
+    <footer>
+      <div class="linksContainer">
+        <ul>
+          <li>
+            <a href="../presentation.html">Presentación</a>
+          </li>
+          <li>·</li>
+          <li><a href="../category.html">Libros</a></li>
+          <li>·</li>
+          <li><a href="../links.html">Enlaces</a></li>
+        </ul>
+      </div>
+      <div class="bottomFooter">
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="530.000000pt"
+            height="458.000000pt"
+            viewBox="0 0 530.000000 458.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(0.000000,458.000000) scale(0.100000,-0.100000)"
+              stroke="none"
+            >
+              <path
+                d="M961 4575 c-1 -6 11 -28 25 -49 36 -53 602 -806 625 -832 24 -25 24
+         -40 2 -49 -20 -7 -172 -56 -268 -85 -33 -10 -229 -71 -435 -135 -206 -64 -403
+         -125 -437 -135 -69 -20 -83 -27 -83 -40 0 -4 89 -53 198 -109 633 -321 579
+         -287 723 -451 41 -47 97 -110 125 -140 29 -30 65 -71 80 -90 16 -19 31 -37 34
+         -40 3 -3 39 -43 80 -90 41 -47 77 -87 80 -90 3 -3 34 -39 70 -80 36 -41 79
+         -91 97 -110 17 -19 41 -47 53 -63 l21 -27 471 0 470 0 517 -389 c284 -213 642
+         -483 795 -599 154 -116 283 -209 287 -207 3 3 12 84 18 182 7 98 16 231 22
+         296 5 65 6 124 2 131 -5 7 -131 122 -281 255 -150 133 -277 252 -283 264 -5
+         12 -55 148 -112 302 l-102 279 -375 349 c-443 411 -546 502 -694 612 -215 159
+         -826 568 -1366 912 -107 69 -225 145 -262 169 -37 24 -72 44 -77 44 -5 0 -12
+         6 -14 13 -3 6 -6 7 -6 2z m1743 -1577 c108 -104 292 -274 443 -412 23 -21 40
+         -43 37 -47 -3 -5 -39 -9 -79 -9 -78 0 -71 -2 -212 76 -27 15 -80 44 -120 65
+         -146 78 -138 72 -137 115 1 21 6 68 12 104 19 121 27 136 56 108z"
+              />
+              <path
+                d="M989 2706 c-2 -3 -40 -9 -84 -15 -168 -22 -728 -104 -832 -122 -35
+         -6 -63 -15 -63 -19 0 -4 116 -85 257 -180 616 -415 1037 -699 1153 -779 81
+         -55 214 -165 375 -311 138 -124 352 -315 475 -425 123 -110 249 -224 280 -252
+         31 -29 69 -62 83 -73 l26 -21 238 80 c131 43 337 111 458 151 121 40 227 76
+         235 82 21 13 -114 5 -538 -33 l-132 -12 -93 72 c-186 143 -743 579 -918 717
+         -115 91 -120 97 -289 331 -95 131 -190 261 -210 288 -66 90 -223 309 -300 418
+         -54 77 -81 107 -96 107 -11 0 -23 -2 -25 -4z"
+              />
+              <path
+                d="M3355 1264 c11 -17 54 -74 95 -128 351 -458 382 -501 421 -585 21
+         -47 49 -106 62 -131 l22 -45 65 2 c58 1 265 10 650 29 l125 6 115 -97 c122
+         -102 170 -144 287 -243 40 -34 74 -62 77 -62 15 0 2 37 -55 156 -33 71 -77
+         165 -97 208 -20 44 -53 112 -72 150 l-35 71 -125 11 c-69 6 -215 17 -325 23
+         -110 7 -248 17 -307 21 l-107 9 -138 109 c-733 575 -687 541 -658 496z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="subjectContainer">
+          <p>Asignatura de Herramientas de HTML y CSS.</p>
+          <p>Aida María González Fernández</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../app.js"></script>
+    <script src="../../node_modules/vanilla-lazyload/dist/lazyload.min.js"></script>
+  </body>
+</html>
