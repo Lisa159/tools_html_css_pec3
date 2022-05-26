@@ -18,7 +18,6 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
-    "carbon-components": "^10.56.0",
-    "vanilla-lazyload": "^17.6.1"
+    "carbon-components": "^10.56.0"
   }
 }
