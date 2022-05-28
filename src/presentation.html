@@ -16,14 +16,24 @@
   <body data-bg="./assets/img/map.jpg">
     <nav class="header">
       <div id="logoContainer">
-        <a href="index.html" tabindex="-1"></a>
+        <a href="index.html" tabindex="-1"
+          ><span class="visually-hidden">Icon</span></a
+        >
       </div>
       <span class="titleName">DAENERYS TARGARYEN</span>
       <div id="responsive">
-        <button class="hamburguer" onclick="openSidenav()"></button>
+        <button
+          class="hamburguer"
+          onclick="openSidenav()"
+          aria-label="Abrir sidenav"
+        ></button>
         <div class="sidenav">
           <div class="closeContainer">
-            <button class="close" onclick="openSidenav()"></button>
+            <button
+              class="close"
+              onclick="openSidenav()"
+              aria-label="Cerrar sidenav"
+            ></button>
           </div>
           <ul>
             <li>
@@ -363,9 +373,8 @@
     </footer>
 
     <script async src="app.js"></script>
-    <script
-      async
-      src="../node_modules/carbon-components/scripts/carbon-components.min.js"
-    ></script>
+    <script async type="module">
+      import "carbon-components/scripts/carbon-components.min";
+    </script>
   </body>
 </html>
