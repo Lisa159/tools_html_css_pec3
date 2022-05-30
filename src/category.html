@@ -58,9 +58,15 @@
         <figure>
           <img
             alt="Foto de libros"
-            src="./assets/img/books.jpg"
-            data-src="./assets/img/books.jpg"
+            src="./assets/img/books.jpg?width=360"
+            data-src="./assets/img/books.jpg?width=360"
             title="Foto de libros"
+            srcset="
+              ./assets/img/books.jpg?width=360 360w,
+              ./assets/img/books.jpg?width=500 500w,
+              ./assets/img/books.jpg           800w
+            "
+            sizes="(min-width: 360px) 50vw, 100vw"
           />
           <figcaption>
             <cite>A Song of Ice and Fire Hardcover</cite> por Robert.
