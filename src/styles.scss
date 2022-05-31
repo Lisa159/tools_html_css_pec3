@@ -302,6 +302,11 @@ aside {
 #categoria {
   .categoryContainer {
     animation: fade-bottom 0.5s ease-in;
+    img {
+      max-width: 100%;
+      width: 360px;
+      height: 270px;
+    }
   }
   article {
     animation: fade-bottom 0.5s ease-in;
