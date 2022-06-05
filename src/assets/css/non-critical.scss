@@ -37,7 +37,7 @@
   #responsive {
     display: flex;
     .hamburguer {
-      background-image: url(assets/menu_black_24dp.svg);
+      background-image: url(../menu_black_24dp.svg);
       background-repeat: no-repeat;
       background-color: transparent;
       background-position: center;
@@ -84,7 +84,7 @@
         display: flex;
         justify-content: flex-end;
         .close {
-          background-image: url(assets/close_black_24dp.svg);
+          background-image: url(../close_black_24dp.svg);
           background-repeat: no-repeat;
           background-color: transparent;
           background-position: center;
@@ -144,7 +144,7 @@
     display: flex;
     align-items: center;
     a {
-      content: url("./assets/dragon.svg");
+      content: url("../dragon.svg");
       height: 55px;
     }
   }
