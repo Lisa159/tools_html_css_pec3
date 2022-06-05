@@ -7,6 +7,18 @@
     <style>
       @import "./critical.scss";
     </style>
+    <link
+      rel="preload"
+      href="non-critical.scss"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="non-critical.scss" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="./assets/dragon.ico" />
   </head>
   <body data-bg="../assets/img/map.jpg">
     <nav class="header">
@@ -145,18 +157,6 @@
         </div>
       </div>
     </footer>
-    <link
-      rel="preload"
-      href="non-critical.scss"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="non-critical.scss" />
-    </noscript>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/x-icon" href="./assets/dragon.ico" />
     <script async src="app.js"></script>
   </body>
 </html>
