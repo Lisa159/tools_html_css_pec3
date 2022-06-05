@@ -22,7 +22,6 @@
   box-shadow: 0 5px 5px 0px rgb(0 0 0 / 5%);
   position: sticky;
   top: 0px;
-  height: 100%;
   background-color: #ffffff;
   justify-content: space-between;
   padding: 10px 30px;
@@ -609,15 +608,6 @@ footer {
 
 /******** Responsive ********/
 @media only screen and (min-width: 768px) {
-  body {
-    min-height: 100vh;
-    background: linear-gradient(
-        rgb(255 255 255 / 45%),
-        rgba(255, 255, 255, 0.4)
-      ),
-      url(./assets/img/map.webp?width=800);
-    background-size: cover;
-  }
   .detailsContainer {
     flex-direction: row;
     #details {
@@ -634,7 +624,6 @@ footer {
     display: none !important;
   }
   .header {
-    height: 80px;
     span {
       font-size: 1.15rem;
       line-height: 1.5rem;
