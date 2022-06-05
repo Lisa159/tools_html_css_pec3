@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <style>
+      @import "./critical.scss";
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Daenerys Targaryen</title>
     <link
-      rel="stylesheet"
-      href="styles.scss"
-      media="print"
-      onload="this.media='all'"
+      rel="preload"
+      href="non-critical.scss"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link rel="stylesheet" href="non-critical.scss" />
+    </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/x-icon" href="./assets/dragon.ico" />
@@ -379,7 +385,7 @@
       </div>
     </footer>
 
-    <script async src="app.js"></script>
+    <script defer src="app.js"></script>
     <script async type="module">
       import "carbon-components/scripts/carbon-components.min";
     </script>
