@@ -7,23 +7,11 @@
     <style>
       @import "./critical.scss";
     </style>
-    <link
-      rel="preload"
-      href="non-critical.scss"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="non-critical.scss" />
-    </noscript>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/x-icon" href="./assets/dragon.ico" />
   </head>
   <body data-bg="../assets/img/map.jpg">
     <nav class="header">
       <div id="logoContainer">
-        <a href="./index.html" tabindex="-1"
+        <a href="./index.html" tabindex="-1" style="width: 63px; height: 55px"
           ><span class="visually-hidden">Icon</span></a
         >
       </div>
@@ -157,6 +145,18 @@
         </div>
       </div>
     </footer>
+    <link
+      rel="preload"
+      href="non-critical.scss"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="non-critical.scss" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="./assets/dragon.ico" />
     <script async src="app.js"></script>
   </body>
 </html>
