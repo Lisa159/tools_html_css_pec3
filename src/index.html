@@ -6,192 +6,432 @@
     <title>Daenerys Targaryen</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@0,400;0,700;0,800;1,400&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&display=swap");
+      body,
+      div,
+      span,
+      h1,
+      h2,
+      h3,
+      p,
+      blockquote,
+      a,
+      cite,
+      img,
+      ul,
+      li,
+      footer,
+      nav {
+        font: inherit;
+        vertical-align: baseline;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+      }
+
+      button {
+        border-radius: 0;
+        font-family: inherit;
+      }
+
+      footer,
+      main,
+      nav {
+        display: block;
+      }
+
+      body {
+        line-height: 1;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      blockquote {
+        quotes: none;
+      }
+
+      blockquote:before,
+      blockquote:after {
+        content: "";
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      button {
+        margin: 0;
+      }
+
+      html {
+        font-size: 100%;
+      }
+
+      body {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizelegibility;
+        font-family: IBM Plex Sans, Helvetica Neue, Arial, sans-serif;
+        font-weight: 400;
+      }
+
+      h1 {
+        letter-spacing: 0;
+        font-size: 2.625rem;
+        font-weight: 300;
+        line-height: 1.199;
+      }
+
+      h2 {
+        letter-spacing: 0;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.25;
+      }
+
+      h3 {
+        letter-spacing: 0;
+        font-size: 1.75rem;
+        font-weight: 400;
+        line-height: 1.28572;
+      }
+
+      p {
+        letter-spacing: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+
+      a {
+        color: #0f62fe;
+      }
+
       :root {
         --color: #000;
-        --secondary-color: #000;
-        --contrast-color: #000;
-        --main-color: #f00;
+        --secondary-color: rgba(255, 141, 0, 0.3);
+        --contrast-color: #ff8d00;
+        --main-color: red;
         --form-color: #f2e8e4;
         --font-family: "Open Sans", sans-serif;
         --secondary-font-family: "Cinzel", sans-serif;
         --scale-carousel: 1.1;
       }
+
       *,
-      *:after,
-      *:before {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
+      :after,
+      :before {
         box-sizing: border-box;
         font-family: var(--font-family);
       }
+
       h1,
       h2,
       h3 {
         margin: 0;
       }
+
       h1,
       h2 {
         font-family: var(--secondary-font-family);
         font-weight: 600;
       }
+
       html {
         height: 100%;
       }
+
       body {
-        display: flex;
+        min-height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.45),
+            rgba(255, 255, 255, 0.4)
+          ),
+          url(./assets/img/map.webp);
+        background-position: 0 0, 0 0;
+        background-repeat: repeat, repeat;
+        background-size: cover;
+        background-attachment: scroll, scroll;
+        background-origin: padding-box, padding-box;
+        background-clip: border-box, border-box;
         flex-direction: column;
         margin: 0;
-        min-height: 100%;
-        overflow-x: hidden;
-        background: linear-gradient(#000, rgba(255, 255, 255, 0.4)),
-          url(./assets/img/map.webp?width=500);
-        background-size: cover;
-      }
-      .header {
         display: flex;
-        flex-direction: row;
-        text-align: center;
-        align-items: center;
-        box-shadow: 0 5px 5px 0px #000;
-        position: sticky;
-        top: 0px;
-        height: 100%;
-        background-color: #fff;
-        justify-content: space-between;
-        padding: 10px 30px;
-        z-index: 11;
+        overflow-x: hidden;
       }
+
+      .header {
+        text-align: center;
+        height: 100%;
+        z-index: 11;
+        background-color: #fff;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        display: flex;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+      }
+
       .header .titleName {
         font-family: var(--secondary-font-family);
         font-weight: 700;
       }
+
       .header #non-responsive {
         display: none;
       }
+
       .header #responsive {
         display: flex;
       }
+
       .header #responsive .hamburguer {
-        background-image: url(assets/menu_black_24dp.svg);
-        background-repeat: no-repeat;
-        background-color: transparent;
-        background-position: center;
-        border: none;
         height: 40px;
         width: 40px;
-        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url(./assets/menu_black_24dp.svg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        border: none;
         border-radius: 4px;
         display: inline;
       }
-      .header #responsive .hamburguer:hover {
-        background-color: var(--secondary-color);
-      }
-      .header #responsive .hamburguer:active {
-        background-color: var(--contrast-color);
-      }
+
       .header #responsive .overlay {
-        display: none;
-        position: fixed;
-        top: 0px;
-        left: 0px;
         width: 100vw;
         height: 100%;
-        background-color: black;
-        transition: opacity 0.2s ease-in-out 0.2s;
         z-index: 50;
+        background-color: #000;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
         opacity: 0.7 !important;
       }
+
       .header #responsive .sidenav {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
         height: 100vh;
-        right: 0;
-        top: 0;
-        background-color: #fff;
         z-index: 100;
+        background-color: #fff;
+        flex-direction: column;
         padding: 30px 10px;
-        transform: translateX(100vw);
-        transition-property: transform, opacity;
-        transition-duration: 0.6s;
-        transition-timing-function: ease-in-out;
-      }
-      .header #responsive .sidenav .closeContainer {
         display: flex;
-        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translate(100vw);
       }
+
+      .header #responsive .sidenav .closeContainer {
+        justify-content: flex-end;
+        display: flex;
+      }
+
       .header #responsive .sidenav .closeContainer .close {
-        background-image: url(assets/close_black_24dp.svg);
-        background-repeat: no-repeat;
-        background-color: transparent;
-        background-position: center;
-        border: none;
         height: 40px;
         width: 40px;
-        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url(./assets/close_black_24dp.svg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        border: none;
         border-radius: 4px;
         display: inline;
       }
-      .header #responsive .sidenav .closeContainer .close:hover {
-        background-color: var(--secondary-color);
-      }
-      .header #responsive .sidenav .closeContainer .close:active {
-        background-color: var(--contrast-color);
-      }
+
       .header #responsive .sidenav ul {
-        display: flex;
-        flex-direction: column;
         height: 100%;
-        list-style-type: none;
-        padding: 0;
+        flex-direction: column;
         gap: 30px;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
       }
+
       .header #responsive .sidenav ul li {
+        width: 100%;
         align-self: center;
         display: flex;
-        width: 100%;
       }
+
       .header #responsive .sidenav ul li a {
-        text-decoration: none;
         color: #000;
         text-transform: uppercase;
-        padding: 10px 20px;
         width: 100%;
+        padding: 10px 20px;
         font-size: 16px;
+        text-decoration: none;
       }
-      .header #responsive .sidenav ul li :hover {
-        background-color: var(--secondary-color);
-        border-radius: 4px;
-      }
-      .header #responsive .sidenav ul li :active {
-        background-color: var(--contrast-color) !important;
-        border-radius: 4px !important;
-        color: #fff;
-      }
-      .header #responsive .sidenav ul li .navSelected {
-        font-weight: 700;
-        border-bottom: 2px solid var(--contrast-color);
-      }
+
       .header #logoContainer {
         height: 100%;
-        display: flex;
         align-items: center;
+        display: flex;
       }
+
       .header #logoContainer a {
-        content: url("./assets/dragon.svg");
+        content: url(./assets/dragon.svg);
         height: 55px;
+      }
+
+      .visually-hidden {
+        height: 1px;
+        width: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        white-space: nowrap;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: absolute !important;
+      }
+
+      main {
+        width: inherit;
+        height: 100%;
+        flex: 1 0 auto;
+        padding: 20px;
+      }
+
+      #portada .introContainer {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+      }
+
+      #portada .introContainer .imgContainer {
+        height: 300px;
+        max-width: 260px;
+        width: 100%;
+        border-radius: 30px;
+        margin: 0 40px;
+        display: flex;
+      }
+
+      #portada .introContainer .imgContainer img {
+        width: 100%;
+        height: 100%;
+        -webkit-clip-path: polygon(
+          47% 12%,
+          96% 19%,
+          89% 76%,
+          51% 91%,
+          11% 77%,
+          5% 20%
+        );
+        clip-path: polygon(47% 12%, 96% 19%, 89% 76%, 51% 91%, 11% 77%, 5% 20%);
+      }
+
+      #portada .introContainer .titleContainer {
+        width: 85%;
+        height: 100%;
+        text-align: center;
+        border-radius: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 30px 10px;
+        display: flex;
+      }
+
+      #portada .introContainer .titleContainer h1 {
+        font-family: var(--secondary-font-family);
+        font-weight: 600;
+      }
+
+      #portada .introContainer .titleContainer h1 span {
+        background-color: #000;
+      }
+
+      #portada .introContainer .titleContainer span {
+        color: var(--contrast-color);
+      }
+
+      #portada .introContainer .titleContainer .containerQuote {
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 4px;
+        flex-direction: column;
+        padding: 20px;
+        line-height: 1.5em;
+        display: flex;
+      }
+
+      #portada .introContainer .titleContainer .containerQuote blockquote {
+        margin: 0 0 20px;
+        font-style: italic;
+      }
+
+      a {
+        color: #000;
+      }
+
+      footer {
+        color: var(--contrast-color);
+        z-index: 9;
+        background-color: #000;
+        padding: 20px;
+      }
+
+      footer div {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+      }
+
+      footer div li {
+        text-align: center;
+      }
+
+      footer div li,
+      footer div a {
+        color: #fff;
+      }
+
+      footer div a {
+        line-height: 1.5rem;
+      }
+
+      footer .bottomFooter {
+        border-top: 1px solid;
+        margin-top: 15px;
+        padding-top: 15px;
+      }
+
+      footer .bottomFooter .icon {
+        width: 50px;
+      }
+
+      footer .bottomFooter .icon svg {
+        fill: #fff;
+        width: 50px;
+        height: fit-content;
+      }
+
+      footer .bottomFooter .subjectContainer p:first-of-type {
+        margin-top: 15px;
       }
     </style>
     <link
       as="style"
       rel="stylesheet"
-      href="styles.scss"
+      href="non-critical.scss"
       media="print"
       onload="this.media='all'"
     />
     <noscript>
-      <link rel="stylesheet" type="text/css" href="styles.scss" />
+      <link rel="stylesheet" type="text/css" href="non-critical.scss" />
     </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
